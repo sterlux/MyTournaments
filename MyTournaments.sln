@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTournaments.API", "MyTournaments.API\MyTournaments.API.csproj", "{6076E08B-9D0B-46A9-9957-1EB8049ACC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTournaments.Data", "MyTournaments.Data\MyTournaments.Data.csproj", "{DD3D4E7A-F066-418B-9CBD-3D154514DADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6076E08B-9D0B-46A9-9957-1EB8049ACC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6076E08B-9D0B-46A9-9957-1EB8049ACC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6076E08B-9D0B-46A9-9957-1EB8049ACC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6076E08B-9D0B-46A9-9957-1EB8049ACC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3D4E7A-F066-418B-9CBD-3D154514DADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3D4E7A-F066-418B-9CBD-3D154514DADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3D4E7A-F066-418B-9CBD-3D154514DADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3D4E7A-F066-418B-9CBD-3D154514DADC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

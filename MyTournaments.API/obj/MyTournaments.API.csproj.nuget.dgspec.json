@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.API\\MyTournaments.API.csproj": {}
+  },
+  "projects": {
+    "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.API\\MyTournaments.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.API\\MyTournaments.API.csproj",
+        "projectName": "MyTournaments.API",
+        "projectPath": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.API\\MyTournaments.API.csproj",
+        "packagesPath": "C:\\Users\\devlu\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\devlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\MyTournaments.Data.csproj": {
+                "projectPath": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\MyTournaments.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\MyTournaments.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\MyTournaments.Data.csproj",
+        "projectName": "MyTournaments.Data",
+        "projectPath": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\MyTournaments.Data.csproj",
+        "packagesPath": "C:\\Users\\devlu\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV\\Movil\\MyTournaments\\MyTournaments.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\devlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

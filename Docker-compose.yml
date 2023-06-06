@@ -1,0 +1,26 @@
+version: "3.4"
+
+services:
+
+ tournamentdb:
+  image: mongo
+  container_name: tournamentdb
+  restart: always
+  volumes:
+    - ${WEBAPP_STORAGE_HOME}/site:/data/db
+  ports:
+    - "27017:27017"
+
+ tournament.api:
+  image: ${DOCKER_REGISTRY-}tournamentapi
+  build:
+    context: .
+    dockerfile: MyTournaments.API/Dockerfile
+  container_name: tournamentapi
+  environment:
+    - ASPNETCORE_ENVIRONMENT=Development
+    - "TournamentDBSettings:ConnectionString=mongodb://tournamentdb:27017"
+  depends_on:
+    - tournamentdb
+  ports:
+    - "8000:80"
