@@ -24,3 +24,15 @@ services:
     - tournamentdb
   ports:
     - "8000:80"
+
+ tournament.web:
+  build:
+    context: ./spa
+    target: runner
+    dockerfile: Dockerfile
+  # command: npm run dev
+  ports:
+    - "3000:3000"
+  environment:
+    NODE_ENV: production
+  restart: always

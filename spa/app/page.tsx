@@ -1,23 +1,30 @@
 "use client";
 import { useEffect, useState } from "react";
-import { DataGrid, GridColDef, GridDeleteIcon } from "@mui/x-data-grid";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { Delete } from "@mui/icons-material";
 import Alert from "@mui/material/Alert";
 
+type Player = {
+  id: string | number;
+  firstName: string;
+  lastName: string;
+  // other player properties go here
+};
+
 export default function Home() {
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useState<Player[]>([]);
   const [successMessage, setSuccessMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://localhost:5005/api/v1/Players")
+    fetch("http://localhost:8000/api/v1/Players")
       .then((res) => res.json())
       .then((data) => {
         setPlayers(data);
       });
   }, []);
 
-  const onDeleteClick = (id) => {
-    fetch(`https://localhost:5005/api/v1/Players/${id}`, {
+  const onDeleteClick = (id: any) => {
+    fetch(`http://localhost:8000/api/v1/Players/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
